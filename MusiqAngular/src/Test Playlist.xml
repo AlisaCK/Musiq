@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2020-03-24T22:03:43Z</date>
+	<key>Application Version</key><string>1.0.3.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file:///Users/armanparastaran/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>13460BB6900B6801</string>
+	<key>Tracks</key>
+	<dict>
+		<key>5910</key>
+		<dict>
+			<key>Track ID</key><integer>5910</integer>
+			<key>Name</key><string>Brightside</string>
+			<key>Artist</key><string>Arrested Youth</string>
+			<key>Album Artist</key><string>Arrested Youth</string>
+			<key>Composer</key><string>Ian Johnson &#38; John Feldmann</string>
+			<key>Album</key><string>Brightside - Single</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Apple Music AAC audio file</string>
+			<key>Size</key><integer>6677017</integer>
+			<key>Total Time</key><integer>184881</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>1</integer>
+			<key>Year</key><integer>2020</integer>
+			<key>Date Modified</key><date>2020-03-16T21:29:36Z</date>
+			<key>Date Added</key><date>2020-03-16T21:29:36Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Part Of Gapless Album</key><true/>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3667599234</integer>
+			<key>Play Date UTC</key><date>2020-03-21T05:33:54Z</date>
+			<key>Release Date</key><date>2020-03-13T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Brightside - Single</string>
+			<key>Sort Artist</key><string>Arrested Youth</string>
+			<key>Sort Name</key><string>Brightside</string>
+			<key>Persistent ID</key><string>DAAF62C305515DD4</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Apple Music</key><true/>
+		</dict>
+		<key>17644</key>
+		<dict>
+			<key>Track ID</key><integer>17644</integer>
+			<key>Name</key><string>The Kid I Used to Know</string>
+			<key>Artist</key><string>Arrested Youth</string>
+			<key>Album Artist</key><string>Arrested Youth</string>
+			<key>Composer</key><string>Ian Johnson, David Carlson &#38; John Feldman</string>
+			<key>Album</key><string>Sobville (Episode I) - EP</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Apple Music AAC audio file</string>
+			<key>Size</key><integer>5435549</integer>
+			<key>Total Time</key><integer>145801</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>5</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2020-03-24T22:02:13Z</date>
+			<key>Date Added</key><date>2020-03-24T22:02:15Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2019-11-01T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Sobville (Episode I) - EP</string>
+			<key>Sort Artist</key><string>Arrested Youth</string>
+			<key>Sort Name</key><string>Kid I Used to Know</string>
+			<key>Persistent ID</key><string>B7DF261EA283D7B3</string>
+			<key>Explicit</key><true/>
+			<key>Track Type</key><string>Remote</string>
+			<key>Apple Music</key><true/>
+		</dict>
+		<key>17653</key>
+		<dict>
+			<key>Track ID</key><integer>17653</integer>
+			<key>Name</key><string>Black X White</string>
+			<key>Artist</key><string>Arrested Youth</string>
+			<key>Album Artist</key><string>Arrested Youth</string>
+			<key>Composer</key><string>Michael Costanzo &#38; Ian Johnson</string>
+			<key>Album</key><string>Fear</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Apple Music AAC audio file</string>
+			<key>Size</key><integer>6750489</integer>
+			<key>Total Time</key><integer>186238</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>2018</integer>
+			<key>Date Modified</key><date>2020-03-24T22:02:30Z</date>
+			<key>Date Added</key><date>2020-03-24T22:02:32Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2018-09-27T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Album</key><string>Fear</string>
+			<key>Sort Artist</key><string>Arrested Youth</string>
+			<key>Sort Name</key><string>Black X White</string>
+			<key>Persistent ID</key><string>509186F0DFFD1E81</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Apple Music</key><true/>
+			<key>Playlist Only</key><true/>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Test Playlist</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>17439</integer>
+			<key>Playlist Persistent ID</key><string>F8789718B9A4AC72</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>17644</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>17653</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>5910</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
