@@ -1,0 +1,20 @@
+<!--<div class="pa-record-container" *ngFor="let parecord of parecords">-->
+
+<!--  <parecord-component class="card-item"  [record] = "parecord"  (messageToEmit)="deleteRecords($event)">-->
+<!--  </parecord-component>-->
+
+
+
+
+<!--</div>-->
+<div class = "convert">
+  <input type = "file" style="display: none" accept=".xml" #file/>
+  <button mat-button (click) = "file.click()">Convert XML to Spotify</button>
+</div>
+
+
+<div class="fab-container">
+  <button mat-flat-button color="primary"  matTooltip="Add new class" (click) = "addRecords()" >
+    <i class="material-icons">add</i>
+  </button>
+</div>
