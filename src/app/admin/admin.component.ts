@@ -23,7 +23,7 @@ export class AdminComponent implements OnInit {
 
 
   private loadAllPlaylists() {
-    this.userService.getActivities().subscribe(
+    this.userService.getPlaylists().subscribe(
       playlists => {
         this.playlists = playlists;
 

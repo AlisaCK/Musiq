@@ -12,7 +12,7 @@ import {PARecord} from '../_models/PARecord';
 
 
 
-  parecords: PARecord[] = [];
+  //playlists: Pl[] = [];
 
 
   constructor(
@@ -29,23 +29,23 @@ import {PARecord} from '../_models/PARecord';
 
 
   private loadAllActivities() {
-    this.userService.getActivities().subscribe(
-      parecords => {
-        this.parecords = parecords;
-
-      },
-      error => {
-        this.notifService.showNotif(error, 'error');
-      });
+    // this.userService.getActivities().subscribe(
+    //   parecords => {
+    //     this.parecords = parecords;
+    //
+    //   },
+    //   error => {
+    //     this.notifService.showNotif(error, 'error');
+    //   });
   }
 
   addRecords() {
-    this.userService.generateRandomActivity();
+    // this.userService.generateRandomActivity();
   }
 
   deleteRecords(Id: number) {
-    this.userService.deletePlaylist(Id);
-    this.loadAllActivities();
+    // this.userService.deletePlaylist(Id);
+    // this.loadAllActivities();
   }
 
 }

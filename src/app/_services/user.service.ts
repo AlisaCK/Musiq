@@ -60,18 +60,18 @@ export class UserService {
 
 
 
-  getActivities() {
-    // // const param = 'getCourse';
-    // console.log('getActivities()');
-    //
-    // return new Observable<Playlist[]>(subscriber => {
-    //   if (this.playlists.length > 0) {
-    //     setTimeout(() => {subscriber.next(this.playlists); }, 1000);
-    //   } else {
-    //     setTimeout(() => {subscriber.error('No courses in the DB. Create a new course.'); }, 1000);
-    //   }
-    //
-    // });
+  getPlaylists() {
+    // const param = 'getCourse';
+    console.log('getPlaylist()');
+
+    return new Observable<Playlist[]>(subscriber => {
+      if (this.playlists.length > 0) {
+        setTimeout(() => {subscriber.next(this.playlists); }, 1000);
+      } else {
+        setTimeout(() => {subscriber.error('No courses in the DB. Create a new course.'); }, 1000);
+      }
+
+    });
 
   }
 
