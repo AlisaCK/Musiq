@@ -3,11 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './login/login.component';
 import {AuthGuard} from './_services/auth-guard.service';
-import {AdminComponent} from './admin/admin.component';
+import {PlaylistComponent} from './playlist/playlist.component';
 
 
 
-const routes: Routes = [{path: '', component: HomeComponent}, {path: 'admin', component: AdminComponent, canActivate: [AuthGuard]}, {path: 'login', component: LoginComponent}, { path: '**', redirectTo: '' }];
+const routes: Routes = [{path: '', component: HomeComponent}, {path: 'playlist', component: PlaylistComponent, canActivate: [AuthGuard]}, {path: 'login', component: LoginComponent}, { path: '**', redirectTo: '' }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

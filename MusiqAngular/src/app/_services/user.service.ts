@@ -16,7 +16,6 @@ export class UserService {
 
 
   constructor(private notif: NotificationService) {
-
     // this.playlists = [{calories: 2345,
     // minutes: 123,
     // caloriegoal: 2000,

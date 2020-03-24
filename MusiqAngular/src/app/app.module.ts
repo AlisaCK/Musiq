@@ -9,17 +9,14 @@ import { HomeComponent } from './home/home.component';
 import {MaterialModule} from './material-module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
-import { AdminComponent } from './admin/admin.component';
-
-//TDOD: add admin component to module. If you use CLI this will be done automatically.
-
+import { PlaylistComponent } from './playlist/playlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    AdminComponent
+    PlaylistComponent
   ],
   imports: [
     BrowserModule,

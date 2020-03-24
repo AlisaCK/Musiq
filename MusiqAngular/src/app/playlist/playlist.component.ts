@@ -5,10 +5,10 @@ import {Playlist} from '../_models/Playlist';
 
 @Component({
   selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  templateUrl: './playlist.component.html',
+  styleUrls: ['./playlist.component.css']
 })
-export class AdminComponent implements OnInit {
+export class PlaylistComponent implements OnInit {
 
   playlists: Playlist[] = [];
 
