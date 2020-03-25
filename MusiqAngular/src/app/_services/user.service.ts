@@ -12,10 +12,9 @@ export class UserService {
 
   playlists: Playlist[];
 
-
-
-
   constructor(private notif: NotificationService) {
+    this.playlists = [];
+
     // this.playlists = [{calories: 2345,
     // minutes: 123,
     // caloriegoal: 2000,
