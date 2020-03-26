@@ -1,6 +1,7 @@
 
 import {PAType} from './PAType';
 
+//TODO: notice the added property (createdBy). This will come handy when start implementing 'delete'.
 export class PARecord {
 
   calories: number;
@@ -10,5 +11,6 @@ export class PARecord {
   steps: number;
   activityType: PAType;
   createdDate: Date;
+  createdBy: string;
   }
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MusiqAngular.iml" filepath="$PROJECT_DIR$/.idea/MusiqAngular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HW3starterAngular.iml" filepath="$PROJECT_DIR$/.idea/HW3starterAngular.iml" />
     </modules>
   </component>
 </project>

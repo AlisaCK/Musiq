@@ -1,49 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import {UserService} from '../_services/user.service';
-import {NotificationService} from '../_services/notification.service';
-import {Playlist} from '../_models/Playlist';
+import { first } from 'rxjs/operators';
 
-@Component({
-  selector: 'app-admin',
-  templateUrl: './playlist.component.html',
-  styleUrls: ['./playlist.component.css']
-})
+import { User } from '../_models/user';
+import { UserService } from '../_services/user.service';
+import {Playlist} from '../_models/Playlist';
+import {Observable} from 'rxjs';
+
+@Component({ templateUrl: 'playlist.component.html' })
 export class PlaylistComponent implements OnInit {
 
-  playlists: Playlist[] = [];
+  //TODO: this component must show a list of registered users.
+
+  public playlist: Observable<Playlist[]>;
 
   constructor(
-    private userService: UserService,
-    private notifService: NotificationService
-  ) { }
+    private userServe: UserService
+  ) {}
 
   ngOnInit() {
-    this.loadAllPlaylists();
-  }
+    // this.playlist = this.userServe.getAll();
+   }
 
+  // var userService: UserService;
 
-  private loadAllPlaylists() {
-    this.userService.getPlaylists().subscribe(
-      playlists => {
-        this.playlists = playlists;
-
-      },
-      error => {
-        this.notifService.showNotif(error, 'error');
-      });
-  }
-
-  addPlaylist() {
-    this.userService.generateRandomActivity();
-  }
-
-  deletePlaylist(Id: number) {
-    this.userService.deletePlaylist(Id);
-    this.loadAllPlaylists();
-  }
 }
-
-
-
-
-

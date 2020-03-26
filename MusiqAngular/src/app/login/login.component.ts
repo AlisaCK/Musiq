@@ -13,7 +13,6 @@ export class LoginComponent {
  // loginForm: FormGroup;
   loading = false;
   submitted = false;
-  returnUrl: string;
   error = '';
   username: string;
   password: string;
@@ -43,7 +42,7 @@ export class LoginComponent {
     // }
 
     this.loading = true;
-    console.log("username and password", this.username, this.password);
+
     this.loading = true;
     this.authService.login(this.username, this.password)
       .pipe(first())
@@ -51,7 +50,7 @@ export class LoginComponent {
         data => {
           this.router.navigate(['']);
 
-          this.notif.showNotif(data, 'confirmation');
+          this.notif.showNotif('Logged in as: ' + this.username, 'confirmation');
         },
         error => {
           this.error = error;
@@ -63,7 +62,8 @@ export class LoginComponent {
   }
 
   register() {
-    this.notif.notImplementedWarning('register');
+
+    this.notif.notImplementedWarning('Registration', 500);
   }
 }
 

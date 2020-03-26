@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {AuthService} from './_services/auth.service';
 import {Router} from '@angular/router';
-import {NotificationService} from './_services/notification.service';
 import {User} from './_models/user';
 import {Role} from './_models/role';
 
@@ -11,20 +10,17 @@ import {Role} from './_models/role';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HW2';
+  title = 'HW3Angular';
   currentUser: User;
 
 
   constructor(  private router: Router,
-                private authService: AuthService,
-                private notifService: NotificationService
-  ) {
+                private authService: AuthService
+                ) {
     this.authService.currentUser.subscribe(x => this.currentUser = x);
   }
 
   get isAdmin() {
-    // tslint:disable-next-line:max-line-length
-    // In a later version of this code. We will define a class User and have that encompass both the username and role. For now we will just hardcode it.
     return this.currentUser && this.currentUser.role === Role.admin;
   }
 
@@ -38,9 +34,6 @@ export class AppComponent {
     this.router.navigate(['/login']);
   }
 
-  notImplemented(message) {
 
-    this.notifService.notImplementedWarning(message);
-  }
 
 }

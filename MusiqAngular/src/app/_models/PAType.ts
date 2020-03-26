@@ -1,5 +1,5 @@
 export enum PAType {
-  run,
-  walk,
-  bike
+  running,
+  walking,
+  biking
 }
