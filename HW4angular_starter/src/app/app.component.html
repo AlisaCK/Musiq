@@ -1,0 +1,15 @@
+<mat-toolbar *ngIf="isUser">
+  <button mat-button routerLink="/">Home</button>
+
+  <button mat-button routerLink="/admin" *ngIf="isAdmin">Users</button>
+
+  <button mat-button routerLink="/profile" >Profile</button>
+  <button mat-button routerLink="/playlists" >Playlists</button>
+<!--  TODO: add a button that will show the 'profile' component-->
+
+
+  <button mat-button (click)="logout()">Logout </button>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>

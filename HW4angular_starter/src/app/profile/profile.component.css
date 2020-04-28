@@ -1,0 +1,40 @@
+/*TODO: you will need to adjust CSS to replicate what is shown on the video.*/
+.login-card{
+
+  display: grid;
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+mat-card{
+  align-items: center;
+  align-content: center;
+  dispay: fex;
+}
+.numbox{
+  display: grid;
+}
+.slider{
+  -webkit-appearance: slider-vertical;
+  height: 150px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  //opacity: 0.7;
+  //-webkit-transition: opacity .15s ease-in-out;
+  //transition: opacity .15s ease-in-out;
+
+}
+.slider
+mat-card-content{
+  display: grid;
+  grid-template-columns: 50% 50%
+}
+button{
+  color: hotpink;
+  align-self: center;
+}
+
