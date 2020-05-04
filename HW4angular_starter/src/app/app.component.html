@@ -1,15 +1,33 @@
-<mat-toolbar *ngIf="isUser">
-  <button mat-button routerLink="/">Home</button>
+<!--<mat-toolbar *ngIf="isUser">-->
+<!--  <button mat-button routerLink="/">Home</button>-->
 
-  <button mat-button routerLink="/admin" *ngIf="isAdmin">Users</button>
+<!--  <button mat-button routerLink="/admin" *ngIf="isAdmin">Users</button>-->
 
-  <button mat-button routerLink="/profile" >Profile</button>
-  <button mat-button routerLink="/playlists" >Playlists</button>
-<!--  TODO: add a button that will show the 'profile' component-->
+<!--  <button mat-button routerLink="/profile" >Profile</button>-->
+<!--  <button mat-button routerLink="/playlists" >Playlists</button>-->
+<!--&lt;!&ndash;  TODO: add a button that will show the 'profile' component&ndash;&gt;-->
 
 
-  <button mat-button (click)="logout()">Logout </button>
+<!--  <button mat-button (click)="logout()">Logout </button>-->
+<!--</mat-toolbar>-->
+
+
+<!--<router-outlet></router-outlet>-->
+
+
+<mat-toolbar >
+
+  <div routerLink="/" id = "home" ><img src = "assets/img/MusiqFull.png" width = "100" alt = "Musiq"></div>
+
+  <div id = "button-container">
+
+    <div *ngIf="isUser; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock><button mat-button (click)="logout()" class = "login-out">Logout </button></ng-template>
+    <ng-template #elseBlock><button mat-button routerLink="/login" class = "login-out">Login</button></ng-template>
+
+    <button mat-button routerLink="/playlists">Playlists</button>
+    <button mat-button routerLink="/profile" >Profile</button>
+  </div>
 </mat-toolbar>
-
 
 <router-outlet></router-outlet>

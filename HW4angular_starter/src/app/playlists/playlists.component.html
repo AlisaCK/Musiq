@@ -1,1 +1,16 @@
-<p>playlists works!</p>
+<div class="pa-record-container">
+
+  <playlist-component class="card-item" *ngFor="let playlist of playlists" [playlist]="playlist" (deleteEvent) = "deletePlaylist($event)"></playlist-component>
+
+<!--<div *ngFor="let playlistCard of parecords">{{playlistCard}}</div>-->
+
+
+</div>
+
+
+
+<div class="fab-container">
+  <button mat-flat-button color="primary"  matTooltip="Add new class" (click)="createPlaylist()">
+    <i class="material-icons">add</i>
+  </button>
+</div>

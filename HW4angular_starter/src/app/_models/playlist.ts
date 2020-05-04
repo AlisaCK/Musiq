@@ -3,8 +3,9 @@ import {User} from './user';
 
 export class Playlist {
   id: string;
-  Title: string;
+  title: string;
   createDate: Date;
   createdBy: User;
-  Songs: Song[];
+  songs: Song[];
+  length: number;
 }

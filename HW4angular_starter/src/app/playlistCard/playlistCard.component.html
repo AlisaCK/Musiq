@@ -1,53 +1,56 @@
 <!--TODO: add a tooltip that will show the username that created the playlistCard. Hint: https://stackblitz.com/angular/ygnjpyayagb?file=src%2Fapp%2Ftooltip-message-example.ts-->
 
-<mat-card [matTooltip] = [parecord.createdBy.username] class="parecord-card" >
+<mat-card [matTooltip] = [playlist.createdBy.username] class="playlist-card" >
 
+<div class="title">{{playlist.title}}</div>
+  <div class="songCount">{{playlist.length}}</div>
+  <div class="date">{{playlist.createDate}}</div>
 
-  <div class="date" >{{parecord.createdDate | date}}</div>
+<!--  <div class="date" >{{parecord.createdDate | date}}</div>-->
 
-  <mat-icon class="type">{{activity}}</mat-icon>
+<!--  <mat-icon class="type">{{activity}}</mat-icon>-->
 
-  <div class="titlecal">{{parecord.calories}} Cal</div>
-  <div class="titletime">{{parecord.minutes}} Min</div>
+<!--  <div class="titlecal">{{parecord.calories}} Cal</div>-->
+<!--  <div class="titletime">{{parecord.minutes}} Min</div>-->
 
-  <section class="calories">
-    <mat-progress-bar
-      class="example-margin"
-      [color]="color"
-      [mode]="mode"
-      [value]=[calprogressvalue]
-      [bufferValue]="bufferValue">
-    </mat-progress-bar>
-  </section>
+<!--  <section class="calories">-->
+<!--    <mat-progress-bar-->
+<!--      class="example-margin"-->
+<!--      [color]="color"-->
+<!--      [mode]="mode"-->
+<!--      [value]=[calprogressvalue]-->
+<!--      [bufferValue]="bufferValue">-->
+<!--    </mat-progress-bar>-->
+<!--  </section>-->
 
-  <section class="time">
-    <mat-progress-bar
-      class="example-margin"
-      [color]="color"
-      [mode]="mode"
-      [value]=[minprogressvalue]
-      [bufferValue]="bufferValue">
-    </mat-progress-bar>
-  </section>
+<!--  <section class="time">-->
+<!--    <mat-progress-bar-->
+<!--      class="example-margin"-->
+<!--      [color]="color"-->
+<!--      [mode]="mode"-->
+<!--      [value]=[minprogressvalue]-->
+<!--      [bufferValue]="bufferValue">-->
+<!--    </mat-progress-bar>-->
+<!--  </section>-->
 
-  <div class="caloriesgoal">{{calprogressvalue}}%</div>
-  <div class="timegoal">{{minprogressvalue}}%</div>
+<!--  <div class="caloriesgoal">{{calprogressvalue}}%</div>-->
+<!--  <div class="timegoal">{{minprogressvalue}}%</div>-->
 
-<div class="menu">
-  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Delete or edit">
-    <mat-icon>more_vert</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="notImplemented('Edit activity')">
-      <mat-icon>edit</mat-icon>
-      <span>Edit</span>
-    </button>
-       <button mat-menu-item (click)="delete(parecord.createdDate)">
-      <mat-icon>delete</mat-icon>
-      <span>Delete</span>
-    </button>
-  </mat-menu>
-  </div>
+<!--<div class="menu">-->
+<!--  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Delete or edit">-->
+<!--    <mat-icon>more_vert</mat-icon>-->
+<!--  </button>-->
+<!--  <mat-menu #menu="matMenu">-->
+<!--    <button mat-menu-item (click)="notImplemented('Edit activity')">-->
+<!--      <mat-icon>edit</mat-icon>-->
+<!--      <span>Edit</span>-->
+<!--    </button>-->
+<!--       <button mat-menu-item (click)="delete(parecord.createdDate)">-->
+<!--      <mat-icon>delete</mat-icon>-->
+<!--      <span>Delete</span>-->
+<!--    </button>-->
+<!--  </mat-menu>-->
+<!--  </div>-->
 
 
 </mat-card>

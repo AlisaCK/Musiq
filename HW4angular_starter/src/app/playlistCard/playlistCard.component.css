@@ -36,7 +36,7 @@
   align-self: end;
 }
 
-.parecord-card {
+.playlist-card {
   display: grid;
   grid-template-columns: 50px 50px 50px 50px 50px;
   grid-template-rows: 75px;

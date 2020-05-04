@@ -1,5 +1,3 @@
-/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items#Making_things_wrap*/
-
 .course-list-container{
   display: flex;
   flex-flow: row wrap;
@@ -13,10 +11,14 @@
 
 
 .pa-record-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(305px, 1fr));
-
+  display: flex;
+  flex-wrap: wrap;
+  float:left
+  /*hint: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items#Making_things_wrap*/
 }
+/*.pa-record-container>* {*/
+/*  flex: 1 1 400px;*/
+/*}*/
 
 
 .card-item{
@@ -36,4 +38,19 @@
   align-items: center;
 }
 
-
+.convert{
+  margin: 10% 40% 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 100%
+}
+.convert textarea{
+  width: 100%;
+}
+.convert button{
+  background-color: #1d2130;
+  color: #ffe699;
+  width: 100%;
+}
