@@ -14,7 +14,12 @@ module.exports = {
     setGoals,
     getGoals,
     getUserInfo,
-    updateUserInfo
+    updateUserInfo,
+    storeKey
+}
+
+async function storeKey(key, username){
+
 }
 
 async function authenticate({ username, password }) {
@@ -66,7 +71,6 @@ async function addUser(userParam) {
 }
 
 
-// TODO: complete this function. It takes in calories and minute goal values in 'values' and saves it for a given userid (_id). Hint: use 'updateOne' from mongoose.
 async function setGoals(values, userN){
     console.log(values);
     console.log(userN);
@@ -76,7 +80,6 @@ async function setGoals(values, userN){
 }
 
 
-// TODO: complete this function. It should return calorie and minute goals for a given user.
 async function getGoals(username){
     var user = await getByUsername(username);
     console.log(user);
@@ -85,7 +88,6 @@ async function getGoals(username){
 }
 
 
-// TODO: complete this function. It takes in calories and minute goal values in 'values' and saves it for a given userid (_id). Hint: use 'updateOne' from mongoose.
 async function updateUserInfo(values, userN){
   console.log(values);
   console.log(userN);

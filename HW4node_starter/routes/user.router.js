@@ -12,7 +12,6 @@ router.post('/setgoals', userController.setGoals);
 router.get('/getgoals/:username', userController.getGoals);
 router.post('/updateInfo', userController.updateInformation);
 router.get('/getInfo/:username', userController.getUserInfo);
-//TODO: add the needed routing for setting and getting user goal values. Hint: '/getgoals/:username' Hint2: '/setgoals'
-
+router.get('/auth', userController.auth);
 
 module.exports = router;
