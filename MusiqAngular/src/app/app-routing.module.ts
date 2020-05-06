@@ -9,7 +9,7 @@ import {Role} from './_models/role';
 import {ProfileComponent} from './profile/profile.component';
 import {PlaylistsComponent} from './playlists/playlists.component';
 
-//TODO: add the route to the 'profile' component.
+//TODO: Make sure routes are correct
 
 const routes: Routes = [{path: '', component: HomeComponent, canActivate: [AuthGuard]}, {path: 'login', component: LoginComponent}, { path: 'register', component: RegisterComponent },
   {path: 'admin', component: AdminComponent, canActivate: [AuthGuard], data: { roles: [Role.admin]}},{path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},

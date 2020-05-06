@@ -16,6 +16,7 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
+  // TODO: Delete the goals stuff
   getAll() {
      return this.http.get<User[]>(`http://localhost:3030/user/allusers`);
   }
@@ -27,13 +28,10 @@ export class UserService {
   }
 
 
-  // TODO: add a function that will allow users to set their calorie and minute goals. The function will comuunicate with the back-end.
   setGoals(goals: Goals) {
       return this.http.post(`http://localhost:3030/user/setgoals`, goals);
 
   }
-
-  // TODO: add a function that will allow users to get calorie and minute goals for a specific user (this means, given a username, this function should fetch calories and minute goals for that user). The function will comuunicate with the back-end.
 
   getGoals(user: User) {
     var getpath = `http://localhost:3030/user/getgoals/`

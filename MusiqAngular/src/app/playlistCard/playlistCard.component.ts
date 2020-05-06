@@ -6,6 +6,7 @@ import {User} from '../_models/user';
 import {Goals} from '../_models/user';
 import {first} from 'rxjs/operators';
 
+// TODO: Clean Up this component
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -66,10 +67,6 @@ export class PlaylistCardComponent implements OnInit {
     // this.loadGoals();
     // this.activity = this.activities[this.playlist.activityType];
     //console.log(this.goals);
-    // TODO:  use userService to get the goal values corresponding the username that created the playlistCard and then use the obtained values to properly visualize the progress towards the goal.
-
-
-
   //
     //
   }
