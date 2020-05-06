@@ -1,6 +1,7 @@
-export class Song {
 
-  Name: string;
-  Artist: number;
-  Album: string;
+export class Song {
+  spotifyId: string;
+  title: string;
+  artist: string;
+  album: string;
 }

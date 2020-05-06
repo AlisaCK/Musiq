@@ -1,52 +1,108 @@
 const config = require('../config.json');
 const jwt = require('jsonwebtoken');
-const SimulatedDB = require('../_helpers/dbsimulator');
+const bcrypt = require('bcryptjs');
+const db = require('../_helpers/database');
+const User = db.User;
+
 
 
 module.exports = {
     authenticate,
     getAllUsers,
     getByUsername,
-    addUser
+    addUser,
+    setGoals,
+    getGoals,
+    getUserInfo,
+    updateUserInfo,
+    storeKey
+}
+
+async function storeKey(key, username){
+
 }
 
 async function authenticate({ username, password }) {
 
-    //Here we will switch to real db in the next HW.
-    //Currently simulating it.
-    const user = await SimulatedDB.findUser(username);
-    //If user is found in the 'database'. In the next homework we will hash the password.
-    console.log("service.authenticate():", user.password === password);
-    if (user && user.password === password) {
-        const { password, ...userWithoutPassword } = user;
-        const token = jwt.sign({ sub: user.username, role: user.role }, config.secret);
-        console.log("service.authenticate():", token);
+    const user = await User.findOne({ username });
+    if (user && bcrypt.compareSync(password, user.hash)) {
+        const { hash, ...userWithoutHash } = user.toObject();
+        const token = jwt.sign({ sub: user.id, role: user.role }, config.secret);
         return {
-            ...userWithoutPassword,
+            ...userWithoutHash,
             token
         };
     }
 }
 
 async function getAllUsers() {
-    //Returning the result of the promise. In the next homework we will make sure no passwords are sent back to the user.
-    return await SimulatedDB.getAllUsers();
+    //Returning the result of the promise.
+    return await User.find().select('-hash');
 }
 
 
 
 async function getByUsername(username) {
 
-    return await SimulatedDB.findUser(username);
+    return await User.find({username:username}).select('-hash');
 }
 
-async function addUser(user) {
 
-    if(await getByUsername(user.username)){
-        throw 'Username "' + user.username + '" is already taken';
+async function addUser(userParam) {
+
+    // validate
+    if (await User.findOne({ username: userParam.username })) {
+        throw 'Username "' + userParam.username + '" is already taken';
+    }
+    else  if (await User.findOne({ email: userParam.email })) {
+        throw 'Email "' + userParam.email + '" is already taken';
     }
 
-    return SimulatedDB.addUser(user);
+    const user = new User(userParam);
+
+    // hash password
+    if (userParam.password) {
+        user.hash = bcrypt.hashSync(userParam.password, 10);
+    }
+
+    // save user
+    await user.save();
 
 }
 
+
+async function setGoals(values, userN){
+    console.log(values);
+    console.log(userN);
+    await User.updateOne({ _id: userN }, { $set: {minutegoal: parseInt(values.minutegoal), caloriegoal: parseInt(values.caloriegoal) } }, function(err, res) {
+        if (err) throw err;
+    });
+}
+
+
+async function getGoals(username){
+    var user = await getByUsername(username);
+    console.log(user);
+    return {"caloriegoal": user[0].caloriegoal, "minutegoal": user[0].minutegoal};
+
+}
+
+
+async function updateUserInfo(values, userN){
+  console.log(values);
+  console.log(userN);
+  //Todo: update everything in the user not just goals
+  await User.updateOne({ _id: userN }, { $set: {minutegoal: parseInt(values.minutegoal), caloriegoal: parseInt(values.caloriegoal) } }, function(err, res) {
+    if (err) throw err;
+  });
+}
+
+
+// TODO: complete this function. It should return calorie and minute goals for a given user.
+async function getUserInfo(username){
+  var user = await getByUsername(username);
+  console.log(user);
+  //return all user stufff instead of just goals
+  return user;
+
+}

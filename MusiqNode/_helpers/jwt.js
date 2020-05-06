@@ -24,7 +24,7 @@ async function isRevoked(req, payload, done) {
 
 
 
-    console.log("user in JWT",user);
+   // console.log("user in JWT",user);
     // revoke token if user no longer exists
     if (!user) {
 

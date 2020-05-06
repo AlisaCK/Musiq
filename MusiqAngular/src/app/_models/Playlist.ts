@@ -1,7 +1,11 @@
-import {Song} from './Song';
+import { Song } from './song';
+import {User} from './user';
 
 export class Playlist {
-  Title: string;
-  SongNum: number;
-  Songs: Song[];
+  id: string;
+  title: string;
+  createDate: Date;
+  createdBy: User;
+  songs: Song[];
+  length: number;
 }
