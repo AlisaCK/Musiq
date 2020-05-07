@@ -15,7 +15,6 @@ module.exports = {
     getGoals,
     getUserInfo,
     updateUserInfo,
-    storeKey
 }
 
 async function storeKey(key, username){

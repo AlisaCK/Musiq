@@ -22,6 +22,7 @@ app.use(jwt());
 
 app.use('/user', require('./routes/user.router'));
 app.use('/playlist', require('./routes/playlist.router'));
+app.use('/spotify', require('./routes/spotify.router'));
 app.use(errorHandler);
 
 

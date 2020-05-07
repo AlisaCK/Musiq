@@ -1,7 +1,4 @@
 const userService = require('../services/user.service')
-var my_client_id = 'b344eb9c6f034888b47d3ebf5fd823ee'; // Your client id
-var client_secret = 'c4640761c2ea41888c5aaa744f7940a0'; // Your secret
-var redirect_uri = 'http://localhost:3030/callback'; // Your redirect uri
 
 module.exports = {
     authenticate,
