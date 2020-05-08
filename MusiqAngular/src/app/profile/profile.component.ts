@@ -6,6 +6,7 @@ import {NotificationService} from '../_services/notification.service';
 import {Goals} from '../_models/user';
 import {PlaylistService} from '../_services/playlist.service';
 import {UserService} from '../_services/user.service';
+import {SpotifyService} from '../_services/spotify.service';
 import { AuthService } from '../_services/auth.service';
 
 
@@ -18,6 +19,7 @@ export class ProfileComponent implements OnInit {
 
 
   constructor(
+    private spotifyservice: SpotifyService,
     private userservice: UserService,
     private authenticationService: AuthService,
     private playlistService: PlaylistService,
@@ -28,9 +30,15 @@ export class ProfileComponent implements OnInit {
 
   }
 
-
-
-
+  private authorize() {
+    console.log('fuck');
+    this.spotifyservice.authorize().subscribe(
+      resp => {
+        this.notifService.showNotif('Logged in successfully', 'confirmation');
+      }, error => {
+        this.notifService.showNotif(error);
+      });
+  }
 
   private loadGoals() {
     console.log('loadGoals()');
