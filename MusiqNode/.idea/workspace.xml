@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="50e03f42-4c79-4dd2-9055-74481f1142be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../MusiqNode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/routes/spotify.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/routes/spotify.router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588654118615</updated>
-      <workItem from="1588654119711" duration="21175000" />
+      <workItem from="1588654119711" duration="21472000" />
     </task>
     <servers />
   </component>

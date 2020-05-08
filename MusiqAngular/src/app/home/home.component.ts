@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
 
 
 
-
+/**
   private loadAllPArecords() {
     console.log('loadAllParecords()');
     this.parecordservice.getAll().subscribe(
@@ -64,6 +64,7 @@ export class HomeComponent implements OnInit {
       this.loadAllPArecords();
     }, error => { this.notifService.showNotif(error); });
   }
+**/
+
 
 }
-
