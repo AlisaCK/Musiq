@@ -2,120 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50e03f42-4c79-4dd2-9055-74481f1142be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MusiqNode/routes/spotify.router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MusiqNode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/bson/browser_build/bson.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/bson/browser_build/bson.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/bson/lib/bson/parser/serializer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/bson/lib/bson/parser/serializer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/bson/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/bson/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/cookie-parser/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/cookie-parser/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/cookie-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/cookie-parser/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/cookie-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/cookie-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/cors/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/cors/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/bin/changelog" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/bin/changelog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/express-jwt/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/change_stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/change_stream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/cmap/connection_pool.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/cmap/connection_pool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/cursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sdam/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sdam/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sdam/server_selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sdam/server_selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sdam/topology.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sdam/topology.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sdam/topology_description.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sdam/topology_description.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sessions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/sessions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/topologies/shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/topologies/shared.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/uri_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/uri_parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/core/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/cursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/mongo_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/mongo_client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/close.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/connect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/count.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/count.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/cursor_ops.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/cursor_ops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/db_ops.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/db_ops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/execute_operation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/execute_operation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/explain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/find.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/find.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/has_next.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/next.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/operation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/operation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/remove_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/remove_user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/operations/to_array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongodb/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/dist/browser.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/dist/browser.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/aggregate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/aggregate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/cast.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/cast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/cast/number.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/cast/number.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/cursor/AggregationCursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/cursor/AggregationCursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/cursor/QueryCursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/cursor/QueryCursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/error/cast.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/error/cast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/error/serverSelection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/error/serverSelection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/error/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/error/validation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/error/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/error/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/clone.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/clone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/document/compile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/document/compile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/model/applyHooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/model/applyHooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/model/castBulkWrite.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/model/castBulkWrite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/model/discriminator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/model/discriminator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/populate/assignRawDocsToIdStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/populate/assignRawDocsToIdStructure.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/populate/getSchemaTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/populate/getSchemaTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/populate/getVirtual.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/populate/getVirtual.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/query/castUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/query/castUpdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/query/selectPopulatedFields.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/query/selectPopulatedFields.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/schema/addAutoId.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/schema/addAutoId.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/schema/applyPlugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/schema/applyPlugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/schema/getIndexes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/schema/getIndexes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/update/applyTimestampsToChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/update/applyTimestampsToChildren.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/updateValidators.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/helpers/updateValidators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/options/PopulateOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/options/PopulateOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/plugins/sharding.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/plugins/sharding.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/plugins/validateBeforeSave.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/plugins/validateBeforeSave.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/queryhelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/queryhelpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/SingleNestedPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/SingleNestedPath.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/buffer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/buffer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/number.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/number.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/objectid.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/objectid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/string.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schema/string.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schematype.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/schematype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/core_array.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/core_array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/documentarray.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/documentarray.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/embedded.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/embedded.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/subdocument.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/types/subdocument.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/virtualtype.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/lib/virtualtype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/webpack.base.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/webpack.base.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mongoose/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mpath/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mpath/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mpath/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/node_modules/mpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/node_modules/mpath/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/routes/playlist.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/routes/playlist.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MusiqNode/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/services/user.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusiqNode/routes/spotify.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/routes/spotify.router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588654118615</updated>
-      <workItem from="1588654119711" duration="15841000" />
+      <workItem from="1588654119711" duration="21175000" />
     </task>
     <servers />
   </component>
