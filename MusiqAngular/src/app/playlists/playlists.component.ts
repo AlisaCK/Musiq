@@ -39,6 +39,7 @@ export class PlaylistsComponent implements OnInit {
     this.playlistservice.getAll(currentUser).subscribe(
       playlists => {
         this.playlists = playlists;
+        console.log(this.playlists);
       },
       error => {
         this.notifService.showNotif(error.toString(), 'warning'); });

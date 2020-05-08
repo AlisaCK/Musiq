@@ -36,17 +36,40 @@
   align-self: end;
 }
 
-.playlist-card {
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px 50px;
-  grid-template-rows: 75px;
-  grid-template-areas:
-    "date date date type menu"
+/*.playlist-card {*/
+/*  display: grid;*/
+/*  grid-template-columns: 300px;*/
+/*  grid-template-rows: 20px;*/
+/*  grid-template-areas:*/
+/*    "title"*/
+/*    "songcount"*/
+/*    "song"*/
+/*    "song"*/
+/*    "song";*/
+/*}*/
 
-    "titlecal titlecal . titletime titletime"
-    "calories calories . time time"
-    "caloriesgoal . .  timegoal .";
+
+/*.title{*/
+/*  grid-area: title;*/
+/*}*/
+
+/*.songCount{*/
+/*  grid-area: songcount;*/
+/*}*/
+
+.song{
+  grid-area: song;
+  display: grid;
+  grid-template-columns: 200px 100px;
+  grid-template-areas: "songtitle . songartist";
+
 }
 
+.songTitle{
+  grid-area: songtitle;
+}
+.songArtist{
+  grid-area: songartist;
+}
 
 

@@ -2,9 +2,23 @@
 
 <mat-card [matTooltip] = [playlist.createdBy.username] class="playlist-card" >
 
-<div class="title">{{playlist.title}}</div>
-  <div class="songCount">{{playlist.length}}</div>
+  <div class="title">{{playlist.title}}</div>
   <div class="date">{{playlist.createDate}}</div>
+  <div class="songCount">Songs: {{playlist.length}}</div>
+  <div class="song">
+    <div class="songTitle">{{playlist.songs[0].title}}</div>
+    <div class="songArtist">{{playlist.songs[0].artist}}</div>
+   </div>
+  <div class="song" *ngIf="playlist.length > 1">
+    <div class="songTitle" >{{playlist.songs[1].title}}</div>
+    <div class="songArtist">{{playlist.songs[1].artist}}</div>
+  </div>
+  <div class="song" *ngIf="playlist.length > 2">
+    <div class="songTitle">{{playlist.songs[2].title}}</div>
+    <div class="songArtist">{{playlist.songs[2].artist}}</div>
+  </div>
+  <div class="extra">. . .</div>
+
 
 <!--  <div class="date" >{{parecord.createdDate | date}}</div>-->
 

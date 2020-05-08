@@ -34,35 +34,35 @@ export class HomeComponent implements OnInit {
 
 
   private loadAllPArecords() {
-    console.log('loadAllParecords()');
-    this.parecordservice.getAll().subscribe(
-         parecords => {
-           this.parecords = parecords;
-         },
-        error => {
-            this.notifService.showNotif(error.toString(), 'warning'); });
+    // console.log('loadAllParecords()');
+    // this.parecordservice.getAll().subscribe(
+    //      parecords => {
+    //        this.parecords = parecords;
+    //      },
+    //     error => {
+    //         this.notifService.showNotif(error.toString(), 'warning'); });
   }
 
   createPARecord() {
-    this.parecordservice.add().pipe(first()).subscribe(
-      resp => {
-        this.notifService.showNotif(resp, 'response');
-        this.parecords = null;
-        this.loadAllPArecords();
-        }, error => {
-        this.notifService.showNotif(error); });
+    // this.parecordservice.add().pipe(first()).subscribe(
+    //   resp => {
+    //     this.notifService.showNotif(resp, 'response');
+    //     this.parecords = null;
+    //     this.loadAllPArecords();
+    //     }, error => {
+    //     this.notifService.showNotif(error); });
   }
 
   deletePARecord(date) {
 
 
     // this.userService.deleteActivity(date);
-    this.parecordservice.delete(date).pipe(first()).subscribe(
-      resp => {
-        this.notifService.showNotif(resp, 'response');
-      this.parecords = null;
-      this.loadAllPArecords();
-    }, error => { this.notifService.showNotif(error); });
+    // this.parecordservice.delete(date).pipe(first()).subscribe(
+    //   resp => {
+    //     this.notifService.showNotif(resp, 'response');
+    //   this.parecords = null;
+    //   this.loadAllPArecords();
+    // }, error => { this.notifService.showNotif(error); });
   }
 
 }
