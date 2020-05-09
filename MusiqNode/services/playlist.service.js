@@ -23,7 +23,7 @@ async function addPlaylist(playlist, username) {
   // // });
   // username = cursor.username;
   console.log("wow");
-  console.log(userID);
+  console.log(playlist);
   // validate
   if (await Playlist.findOne({ createdBy: userID, createdDate: playlist.createdDate  })) {
     throw 'Parecord created by"' + username +" on "+ playlist.createdDate +'" already exists';
