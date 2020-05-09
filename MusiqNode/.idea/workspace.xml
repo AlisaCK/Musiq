@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50e03f42-4c79-4dd2-9055-74481f1142be" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../MusiqAngular/src/app/_models/Playlist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqAngular/src/app/_models/Playlist.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MusiqAngular/src/app/_services/playlist.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqAngular/src/app/_services/playlist.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MusiqAngular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqAngular/src/app/app.module.ts" afterDir="false" />
@@ -13,6 +14,15 @@
 =======
       <change beforePath="$PROJECT_DIR$/../MusiqNode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqNode/.idea/workspace.xml" afterDir="false" />
 >>>>>>> 1d08687a848a55f250ad24b6d9cf221a8881c682
+=======
+      <change afterPath="$PROJECT_DIR$/../MusiqAngular/src/app/_services/spotify.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusiqAngular/src/app/_services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqAngular/src/app/_services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusiqAngular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqAngular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusiqAngular/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqAngular/src/app/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusiqAngular/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../MusiqAngular/src/app/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/spotify.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/spotify.router.js" afterDir="false" />
+>>>>>>> dd44e4b262304fbd14c437330dd5085286714b89
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +75,21 @@
       <workItem from="1589010096203" duration="1595000" />
 =======
       <workItem from="1588654119711" duration="21472000" />
+<<<<<<< HEAD
 >>>>>>> 1d08687a848a55f250ad24b6d9cf221a8881c682
+=======
+      <workItem from="1588897164087" duration="6461000" />
+>>>>>>> dd44e4b262304fbd14c437330dd5085286714b89
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$USER_HOME$/Downloads/spotify-auth-demo-master/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="2503" y="-41" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588810195295">

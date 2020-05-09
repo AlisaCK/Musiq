@@ -21,11 +21,14 @@ export class SpotifyService {
     path = path.concat(songName);
     path = path.concat('/');
     path = path.concat(songArtist);
-    return this.http.get<string>(path);
+    return this.http.get<object>(path);
   }
 
   async createSpotifyPlaylist(name: string){
 
   }
 
+  authorize() {
+    return this.http.get('http://localhost:3030/spotify/authorize');
+  }
 }
