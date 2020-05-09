@@ -14,7 +14,7 @@ module.exports = {
 async function addPlaylist(playlist, username) {
 
   var userID;
-  var cursor = await User.findOne({username: username});
+  var cursor = await User.findOne({_id: username});
   // console.log(JSON.stringify(cursor));
   // // cursor.each(function(err, us){
   // //     if(us != null){

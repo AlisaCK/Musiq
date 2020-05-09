@@ -25,7 +25,8 @@ export class PlaylistService {
 
 
 
-  add() {
+  add(playlist: Playlist) {
+    return this.http.post(`http://localhost:3030/playlist/addplaylist`, playlist);
     // const randparecord = {
     //   calories: Math.floor(Math.random() * 2500),
     //   minutes: Math.floor(Math.random() * 180),

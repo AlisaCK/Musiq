@@ -15,8 +15,8 @@
 <!--  </button>-->
 <!--</div>-->
 
-<div class = "convert">
-  <textarea id="xmlDocs" rows="20" cols="100"> enter xml text</textarea>
+<form #textForm = "ngForm" (ngSubmit)="createPlaylist()">
+  <textarea class="formText" id="xmlText" required [(ngModel)]="text" name="xmlText" cols="50" rows="20"></textarea>
 <!--  <input type = "file" style="display: none" accept=".xml" #file/>-->
-  <button mat-button (click) = "file.click()">Convert XML to Spotify</button>
-</div>
+  <button mat-button type = "submit" id = "button" >Convert XML to Spotify</button>
+</form>
