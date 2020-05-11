@@ -64,6 +64,7 @@ export class PlaylistCardComponent implements OnInit {
 
 
   ngOnInit() {
+    console.log(this.playlist);
     // this.loadGoals();
     // this.activity = this.activities[this.playlist.activityType];
     //console.log(this.goals);

@@ -5,11 +5,13 @@ import {first, mergeMap} from 'rxjs/operators';
 import {NotificationService} from '../_services/notification.service';
 import {PlaylistService} from '../_services/playlist.service';
 import {UserService} from '../_services/user.service';
+import {SpotifyService} from '../_services/spotify.service';
 import {Song} from '../_models/Song';
 import {Playlist} from '../_models/Playlist';
 import {AuthService} from '../_services/auth.service';
 import {Router} from '@angular/router';
 import {NgForm} from '@angular/forms';
+import {error} from '@angular/compiler/src/util';
 
 
 @Component({ templateUrl: 'home.component.html' ,
@@ -28,6 +30,7 @@ export class HomeComponent implements OnInit {
     private authenticationService: AuthService,
     private router: Router,
     private notifService: NotificationService,
+    private spotifyService: SpotifyService,
 
   ) {}
 
@@ -51,7 +54,7 @@ export class HomeComponent implements OnInit {
     //         this.notifService.showNotif(error.toString(), 'warning'); });
   }
 
-  createPlaylist() {
+  async createPlaylist() {
     this.submitted = true;
     if (!this.authenticationService.currentUserValue) {
       this.router.navigate(['/login']);
@@ -95,25 +98,37 @@ export class HomeComponent implements OnInit {
     const songs = xmlDoc.getElementsByTagName('song');
     console.log(playlist);
     const songArray: Array<Song> = [];
-    for (let i = 0; i < playlist.length; i++ ) {
+    for (let i = 0; i < playlist.length; i++) {
       const song = new Song();
       song.title = songs[i].children[0].innerHTML;
       song.artist = songs[i].children[1].innerHTML;
       song.album = songs[i].children[2].innerHTML;
       console.log(song);
+      const temp = await (await this.spotifyService.getSongID(song.title, song.artist)).toPromise();
+      song.spotifyId = temp.uri;
+      //   .subscribe(
+      //   obj => {
+      //     song.spotifyId = obj.uri;
+      //   },
+      //   error => {
+      //     this.notifService.showNotif(error.toString(), 'warning');
+      //   }
+      // )
+      console.log(song.spotifyId);
       songArray.push(song);
     }
     playlist.songs = songArray;
     playlist.createdDate = new Date();
     playlist.createdBy = this.authenticationService.currentUserValue;
     console.log(playlist);
+    await this.createSpotPlaylist(playlist);
     this.playlistService.add(playlist).subscribe(
       () => {
-          this.router.navigate(['/playlists']);
-          },
-        error => {
-          this.notifService.showNotif(error.toString(), 'warning');
-        });
+        this.router.navigate(['/playlists']);
+      },
+      error => {
+        this.notifService.showNotif(error.toString(), 'warning');
+      });
     // this.parecordservice.getAll().subscribe(
     //     //      parecords => {
     //     //        this.parecords = parecords;
@@ -128,6 +143,20 @@ export class HomeComponent implements OnInit {
     //     this.loadAllPArecords();
     //     }, error => {
     //     this.notifService.showNotif(error); });
+  }
+
+  async createSpotPlaylist(playlist){
+    const promise = await (await this.spotifyService.createSpotifyPlaylist(playlist.title)).toPromise();
+    console.log('boppp');
+    console.log(promise);
+    let spotid = promise.uri;
+    console.log(spotid);
+    spotid = spotid.replace('spotify:playlist:', '');
+    console.log(spotid);
+    for (let i = 0; i < playlist.length; i++) {
+      let bop = await (await this.spotifyService.addToPlaylist(spotid, playlist.songs[i].spotifyId)).toPromise()
+      console.log(bop.message);
+    }
   }
 
   deletePARecord(date) {

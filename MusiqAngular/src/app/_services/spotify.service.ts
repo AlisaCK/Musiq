@@ -5,6 +5,7 @@ import {AuthService} from './auth.service';
 import {Playlist} from '../_models/Playlist';
 import {Song} from '../_models/Song';
 import {User} from '../_models/user';
+import {SpotReturn} from '../_models/SpotReturn';
 
 
 @Injectable({
@@ -21,11 +22,21 @@ export class SpotifyService {
     path = path.concat(songName);
     path = path.concat('/');
     path = path.concat(songArtist);
-    return this.http.get<object>(path);
+    return this.http.get<SpotReturn>(path);
   }
 
-  async createSpotifyPlaylist(name: string){
+  async createSpotifyPlaylist(name: string) {
+    let path = `http://localhost:3030/spotify/createplaylist/`;
+    path = path.concat(name);
+    return this.http.post<SpotReturn>(path, name);
+  }
 
+  async addToPlaylist(playID: string, trackID: string ) {
+    let path = `http://localhost:3030/spotify/addtoplaylist/`;
+    path = path.concat(playID);
+    path = path.concat('/');
+    path = path.concat(trackID);
+    return this.http.post<SpotReturn>(path, playID);
   }
 
   authorize() {

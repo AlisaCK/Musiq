@@ -4,7 +4,7 @@ var cookieParser = require('cookie-parser');
 const router = express.Router();
 var SpotifyWebApi = require('spotify-web-api-node');
 
-var userid = 'arman.parastaran';
+var userid = 'yyl4sbkuxkevwe172xf7ksrc5';
 
 var scopes = ['user-read-private', 'user-read-email', 'playlist-modify-public', 'playlist-modify-private'],
   redirectUri = 'http://localhost:3030/spotify/callback',
@@ -16,7 +16,7 @@ var spotifyApi = new SpotifyWebApi({
     clientId: clientId
 });
 
-var accessToken = 'BQBcQXshskc2BeBdKCdGOHPIziwWR0Gb4o6Q8-nXWlbN-Cm9_SdBZRXV3IZ_4w090hjaD1W0s0vtAcCYobE4T3fGnUvG_JqCSqRPlerYCgY_d8-J2MLrr706cXM9PiKkM8ONwNqAm46OlYzuJzI8ub_-EeKtYiiAKbqn6C2R822Ahe4qABBjBmnjX7RKLweJ4_lFzMp91HFyJrikMIuxyel-4ONrrmsv';
+var accessToken = 'BQCv0iyazO34cTVNY_spO6Ftyi7nTvahIfG_69Iex_ARjfL8Q_gLiKgO8hYaMjhnkBHcH9TzIZAXIjW5FfuFChXvHXec3k1QROACsf-n5TW2lf-C_ZgqrF84KgC5ipoCcuLcclVTUQ0GEhRhh56f1LX3PeIspN8_oAR7v1PHD91JvC4DXq2abeyBlSlRh48o0JtxqJcxrIKPkZ_7Rw3JuYtNRqZKbHnjS-eJgas-e9Nd';
 spotifyApi.setAccessToken(accessToken);
 
 router.use(express.static(__dirname + '/public'))
@@ -63,7 +63,7 @@ router.post('/createplaylist/:name',
         });
       }
       else {
-        console.log(data.body);
+        //console.log(data.body);
         return res.status(200).json({
           message: 'Playlist created successfully',
           uri: data.body.uri
@@ -84,10 +84,11 @@ router.get('/search/:name/:artist',
         });
       }
       else {
-        console.log(data.body);
+        //console.log(req.params.name);
+        //console.log(data.body.tracks.items[0].uri);
         return res.status(200).json({
           message: 'Song searched successfully, found',
-          uri: data.body.tracks.items[0].uri
+          uri: data.body.tracks.items[0].uri.toString()
         })
       }
     }
@@ -98,7 +99,9 @@ router.get('/search/:name/:artist',
 
 router.post('/addtoplaylist/:playlist/:track',
   function (req, res) {
-    spotifyApi.addTracksToPlaylist('5fxA9mViLWA7pJVbnahinb', [req.params.track], '',
+    console.log("wowowow");
+    console.log(req.params.playlist);
+    spotifyApi.addTracksToPlaylist(req.params.playlist, [req.params.track], '',
     function (err, data){
       if (err) {
         console.error('Something went wrong!');
