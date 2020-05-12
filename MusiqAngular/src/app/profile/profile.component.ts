@@ -44,12 +44,14 @@ export class ProfileComponent implements OnInit {
   private loadUser(user: User) {
     console.log('loadGoals()');
     console.log(user.username);
-    this.userservice.getInfo(this.user.username).pipe(first()).subscribe(user => {
+    this.userservice.getInfo(this.user.username).subscribe((user: User) => {
       this.user = user;
+      // localStorage.setItem('currentUser', JSON.stringify(user));
       // this.authenticationService.updateUser(user);
       console.log(this.user);
       return this.user;
-    });
+    }, error => {
+           this.notifService.showNotif(error.toString(), 'warning'); });
     // this.userservice.getGoals().subscribe(
     //   (goals: Goals) => {
     //     console.log("FUCK EVERYTING");
@@ -63,13 +65,13 @@ export class ProfileComponent implements OnInit {
   updateUser() {
     console.log('update goals');
     console.log(this.user);
-    // this.userservice.updateInfo(this.user).pipe(first()).subscribe(
-    //   resp => {
-    //     this.notifService.showNotif(' Saved Successfully', 'confirmation');
-    //     //this.user = null;
-    //     this.loadUser(this.user);
-    //   }, error => {
-    //     this.notifService.showNotif(error); });
+    this.userservice.updateInfo(this.user).pipe(first()).subscribe(
+      resp => {
+        this.notifService.showNotif(' Saved Successfully', 'confirmation');
+        //this.user = null;
+        this.loadUser(this.user);
+      }, error => {
+        this.notifService.showNotif(error); });
     // this.userservice.
      // this.userservice.setGoals(this.goals).pipe(first()).subscribe(
      //   resp => {

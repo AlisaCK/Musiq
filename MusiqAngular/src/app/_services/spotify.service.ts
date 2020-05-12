@@ -25,9 +25,14 @@ export class SpotifyService {
     return this.http.get<SpotReturn>(path);
   }
 
-  async createSpotifyPlaylist(name: string) {
+  async createSpotifyPlaylist(userID: string, name: string) {
+    console.log(userID);
     let path = `http://localhost:3030/spotify/createplaylist/`;
+    path = path.concat(userID);
+    path = path.concat('/');
+    console.log(path);
     path = path.concat(name);
+    console.log(path);
     return this.http.post<SpotReturn>(path, name);
   }
 

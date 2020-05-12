@@ -25,8 +25,6 @@ export class AuthService {
   }
 
   updateUser(user: User) {
-    localStorage.removeItem('currentUser');
-    localStorage.setItem('currentUser', JSON.stringify(user));
     this.currentUserSubject.next(user);
     this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
 

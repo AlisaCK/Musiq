@@ -55,8 +55,9 @@ export class HomeComponent implements OnInit {
   }
 
   async createPlaylist() {
+    let user = this.authenticationService.currentUserValue;
     this.submitted = true;
-    if (!this.authenticationService.currentUserValue) {
+    if (!user) {
       this.router.navigate(['/login']);
       return;
     }
@@ -121,7 +122,7 @@ export class HomeComponent implements OnInit {
     playlist.createdDate = new Date();
     playlist.createdBy = this.authenticationService.currentUserValue;
     console.log(playlist);
-    await this.createSpotPlaylist(playlist);
+    await this.createSpotPlaylist(user.spotifyID, playlist);
     this.playlistService.add(playlist).subscribe(
       () => {
         this.router.navigate(['/playlists']);
@@ -145,8 +146,8 @@ export class HomeComponent implements OnInit {
     //     this.notifService.showNotif(error); });
   }
 
-  async createSpotPlaylist(playlist){
-    const promise = await (await this.spotifyService.createSpotifyPlaylist(playlist.title)).toPromise();
+  async createSpotPlaylist(userID, playlist){
+    const promise = await (await this.spotifyService.createSpotifyPlaylist(userID, playlist.title)).toPromise();
     console.log('boppp');
     console.log(promise);
     let spotid = promise.uri;

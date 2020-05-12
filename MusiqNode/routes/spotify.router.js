@@ -16,7 +16,7 @@ var spotifyApi = new SpotifyWebApi({
     clientId: clientId
 });
 
-var accessToken = 'BQCv0iyazO34cTVNY_spO6Ftyi7nTvahIfG_69Iex_ARjfL8Q_gLiKgO8hYaMjhnkBHcH9TzIZAXIjW5FfuFChXvHXec3k1QROACsf-n5TW2lf-C_ZgqrF84KgC5ipoCcuLcclVTUQ0GEhRhh56f1LX3PeIspN8_oAR7v1PHD91JvC4DXq2abeyBlSlRh48o0JtxqJcxrIKPkZ_7Rw3JuYtNRqZKbHnjS-eJgas-e9Nd';
+var accessToken = 'BQABHnAYCJn0bQ4yvEN5tWnRUDMlIq1W1yHcMjuwqDm1dLI_D-2EWj6yxf_pRl1q7LWUSeiU6DmIjHPEp58AH9bbh06Cv73CYr4D8Alhxs05b-0fwWcd03BYNuSdH9j5-fEZXBCjFXFLgjhoJcHKMU7RjDwg2gekiwadgcx10J47CoYua8iaAp6-1Wlny_fYh_IUeU0na-n0j9J-ILBBYCKg5TB9qika2xUpmGGvGE2M';
 spotifyApi.setAccessToken(accessToken);
 
 router.use(express.static(__dirname + '/public'))
@@ -53,8 +53,8 @@ router.get('/callback',
   }
 );
 
-router.post('/createplaylist/:name',
-  function (req, res) {spotifyApi.createPlaylist(userid, req.params.name,
+router.post('/createplaylist/:userID/:name',
+  function (req, res) {spotifyApi.createPlaylist(req.params.userID, req.params.name,
     function(err, data) {
       if (err) {
         console.error('Something went wrong!');
