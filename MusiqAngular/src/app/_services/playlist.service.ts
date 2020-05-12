@@ -6,7 +6,6 @@ import {AuthService} from './auth.service';
 import {Playlist} from '../_models/Playlist';
 import {User} from '../_models/user';
 import {first} from 'rxjs/operators';
-import {Goals} from '../_models/user';
 
 
 

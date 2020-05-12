@@ -24,6 +24,17 @@ export class AuthService {
 
   }
 
+  updateUser(user: User) {
+    localStorage.removeItem('currentUser');
+    localStorage.setItem('currentUser', JSON.stringify(user));
+    this.currentUserSubject.next(user);
+    this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
+
+    //this is used by app.component.ts
+    // currentUser is turned into an Observable that will allow other parts of the app to subscribe and get notified when currentUserSubject changes.
+    this.currentUser = this.currentUserSubject.asObservable();
+  }
+
 
   public get currentUserValue(): User {
     return this.currentUserSubject.value;

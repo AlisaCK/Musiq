@@ -87,11 +87,10 @@ async function getGoals(username){
 }
 
 
-async function updateUserInfo(values, userN){
-  console.log(values);
+async function updateUserInfo(user, userN){
+  console.log(user);
   console.log(userN);
-  //Todo: update everything in the user not just goals
-  await User.updateOne({ _id: userN }, { $set: {minutegoal: parseInt(values.minutegoal), caloriegoal: parseInt(values.caloriegoal) } }, function(err, res) {
+  await User.updateOne({ _id: userN }, { $set: {firstName: user.firstName , lastName: user.lastName, email: user.email, username: user.username, spotifyID: user.spotifyID } }, function(err, res) {
     if (err) throw err;
   });
 }

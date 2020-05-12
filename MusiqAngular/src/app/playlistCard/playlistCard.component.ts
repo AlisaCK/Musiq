@@ -3,7 +3,6 @@ import {Playlist} from '../_models/Playlist';
 import {NotificationService} from '../_services/notification.service';
 import {UserService} from '../_services/user.service';
 import {User} from '../_models/user';
-import {Goals} from '../_models/user';
 import {first} from 'rxjs/operators';
 
 // TODO: Clean Up this component
@@ -22,15 +21,6 @@ export class PlaylistCardComponent implements OnInit {
 
    bufferValue = 0;
 
-   activities = ['directions_walk', 'directions_run', 'directions_bike'];
-
-
-   color = 'primary';
-
-   activity = this.activities[0];
-   calprogressvalue = 0;
-   minprogressvalue = 0;
-   goals: Goals;
 
   constructor(private notifService: NotificationService, private userService: UserService) { }
 

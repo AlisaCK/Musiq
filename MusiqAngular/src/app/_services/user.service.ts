@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 
 import {HttpClient} from '@angular/common/http';
 import {User} from '../_models/user';
-import {Goals} from '../_models/user';
 
 
 
@@ -26,18 +25,13 @@ export class UserService {
     return this.http.post(`http://localhost:3030/user/register`, user);
   }
 
-
-  setGoals(goals: Goals) {
-      return this.http.post(`http://localhost:3030/user/setgoals`, goals);
-
+  updateInfo(user: User){
+    return this.http.post(`http://localhost:3030/user/updateInfo`, user);
   }
 
-  getGoals(user: User) {
-    var getpath = `http://localhost:3030/user/getgoals/`
-    getpath = getpath.concat(user.username)
-    return this.http.get<Goals>(getpath);
+  getInfo(username: string){
+    let path = `http://localhost:3030/user/getInfo/`;
+    path = path.concat(username);
+    return this.http.get<User>(path);
   }
-
-
-
 }

@@ -10,7 +10,8 @@ const schema = new Schema({
         firstName: { type: String, required: true },
         lastName: { type: String, required: true },
         role: {type:String, required: true},
-        createdDate: { type: Date, default: Date.now }
+        createdDate: { type: Date, default: Date.now },
+        spotifyID: {type:String, required: true},
     }
 );
 
