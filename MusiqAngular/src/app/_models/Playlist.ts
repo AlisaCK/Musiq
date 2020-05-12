@@ -1,4 +1,4 @@
-import { Song } from './song';
+import { Song } from './Song';
 import {User} from './user';
 
 export class Playlist {
