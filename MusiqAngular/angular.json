@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "HW2": {
+    "Musiq": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "HW2"
+  "defaultProject": "Musiq"
 }

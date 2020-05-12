@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+const path = require('path');
+
+const allowedExt = ['.js','.ico','.css','.png','.jpg','.woff2','.woff','.ttf','.svg'];
+
 /*CORS stands for Cross Origin Resource Sharing and allows modern web browsers to be able to send AJAX requests and receive HTTP responses for resource from other domains other that the domain serving the client side application.*/
 const cors = require('cors');
 
@@ -24,6 +28,9 @@ app.use('/user', require('./routes/user.router'));
 app.use('/playlist', require('./routes/playlist.router'));
 app.use('/spotify', require('./routes/spotify.router'));
 app.use(errorHandler);
+
+app.use('/', express.static(path.join(__dirname+'../MusiqAngular/dist/Musiq')));
+
 
 
 // start server
